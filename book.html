@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking form</title>
+    <link rel="stylesheet" href="./styles/style2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form-group" method="POST" action="book">
+            <div id="form">
+                <h1 class="text-white text-center">Book Now</h1>
+
+                <div id="first-group">
+
+                    <div id="content">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" name = "fname" id="input-group" placeholder="First name">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <input type="number" name="contact" id="input-group" placeholder="Phone number">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-calendar" aria-hidden="false"></i>
+                        <input type="text" name="appointment_date" id="input-group" style="color: white;">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <select id="input-group" name="department" style="background-color: black;">
+                            <option value="">Department</option>
+                            <option value="Surgery">General Surgery</option>
+                            <option value="Cardio">Cardiologist</option>
+                            <option value="Pediatrics">Pediatrics</option>
+                            <option value="Obgyn">Obstetrics and Gynecology</option>
+                            <option value="Dermatology">Dermatology</option>
+                            <option value="Neurology">Neurology</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div id="second-group">
+
+                    <div id="content">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" name="lname" id="input-group" placeholder="Last name">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <input type="email" name="email" id="input-group" placeholder="Email">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <select id="input-group" name="time"
+                        style="background-color: black;">
+                            <option value="">Time slot</option>
+                            <option value="11:00">11:00 - 11:30</option>
+                            <option value="11:30">11:30 - 12:00</option>
+                            <option value="12:00">12:00 - 12:30</option>
+                            <option value="12:30">12:30 - 13:00</option>
+                        </select>
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <select id="input-group" name = "branch" style="background-color: black;">
+                            <option value="">Branch</option>
+                            <option value="Vijaynagar">Vijaynagar</option>
+                            <option value="R R nagar">R R Nagar</option>
+                            <option value="Indiranagar">Indiranagar</option>
+                            <option value="Jalahalli">Jalahalli</option>
+                        </select>
+                    </div>
+            
+                </div>
+                
+                    <button type="submit" value="Submit" id="submit-btn">Book Now</button>
+            </div>
+        </form>
+        <div>
+            <form action="/fetchDetails" method="post">
+                <button class="view-btn">View Booking</button>
+                </form> 
+        </div>
+        <div>
+            <a href="home"><button class="home-btn">Go Home</button></a>
+        </div>
+        
+    </div>
+</body>
+</html>
